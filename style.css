@@ -4,6 +4,8 @@ body {
     font-family:'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 header {
     display: flex;
@@ -11,27 +13,32 @@ header {
     align-items: center;
     padding: 10px 140px ;
     background-color: #eae0d5;
-    margin: -10px -20px ;
 }
 
 .header {
-    font-size: 30px;
-    font-weight: 900;
+    flex-shrink: 0;
+}
+.logo {
+    width: 20%;  
+    height: 20%;
+
 }
 .menu {
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
-    gap: 16px;
     flex-shrink: 0;
+    gap: 50px;
+
 
 }
 
 .first {    
     display: flex;
+    justify-content: space-between;
     gap: 50px;
     padding: 140px;
     background-color: #eae0d5;
-    margin: 0 -20px;
+
 
 }
 .main-left {
@@ -39,6 +46,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
+    
 }
 .welcome {
     font-size: 50px;
@@ -58,6 +66,13 @@ header {
     border: 0px;
 }
 
+.main-right {
+    flex-shrink: 1;
+}
+
+.img {
+    width: 500px;
+}
 .second{
     font-size: 40px;
     font-weight: 900;
@@ -77,6 +92,10 @@ header {
     width: 200px;
     gap:20px;
 }
+
+.boxtext {
+    text-align: center;
+}
 .image {
     height: 200px;
     width: 200px;
@@ -87,7 +106,6 @@ header {
 .information2 {
     height: 400px;
     background-color: rgb(203, 203, 203);
-    margin: 0 -20px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,6 +123,7 @@ header {
     width: 800px;
     font-size: 36px;
     font-style: italic;
+    flex-shrink: 1;
 
 }
 
@@ -150,7 +169,6 @@ header {
 
 .footer {
     background-color: #ef8354;
-    margin: 0 -10px -10px;
     padding: 40px;
     text-align: center;
     color: white;
